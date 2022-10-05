@@ -150,7 +150,7 @@ void display7SEG(int num) {
 }
 int counter=50;
 int status=1;
-void HAL_TIM_PeriodElapsedCallback ( TIM_HandleTypeDef * htim ) {
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
 	counter--;
 	if (counter<=0) {
 		counter=50;
